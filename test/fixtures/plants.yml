@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  imgae_url: MyString
+  light: MyString
+  water: MyString
+  description: MyString
+
+two:
+  name: MyString
+  imgae_url: MyString
+  light: MyString
+  water: MyString
+  description: MyString
