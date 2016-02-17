@@ -8,7 +8,7 @@
 
 Plant.create(
   name: "Fiddle Leaf Fig",
-  imgae_url: "http://www.littlefig.com.au/wp-content/uploads/2015/03/fiddle-leaf-fig-journey.jpg",
+  image_url: "http://www.littlefig.com.au/wp-content/uploads/2015/03/fiddle-leaf-fig-journey.jpg",
   light: "bright consistent light",
   water: "When its dry to the touch",
   description: "The best Plant")
