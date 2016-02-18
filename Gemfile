@@ -7,6 +7,9 @@ gem 'rails-api'
 
 gem 'spring', :group => :development
 
+gem 'rails_12factor', group: :production
+gem 'dotenv-rails', :groups => [:development, :test]
+gem 'puma'
 
 gem 'pg'
 
