@@ -9,7 +9,7 @@ Bundler.require(*Rails.groups)
 module FiddleDFig
   class Application < Rails::Application
     config.action_dispatch.default_headers = {
-        'Access-Control-Allow-Origin' => 'http://localhost:4200',
+        'Access-Control-Allow-Origin' => ENV["RAILS_API_URL"],
         'Access-Control-Request-Method' => %w{GET POST OPTIONS}.join(",")
     }
     # Settings in config/environments/* take precedence over those specified here.
