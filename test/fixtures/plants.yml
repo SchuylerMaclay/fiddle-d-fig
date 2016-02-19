@@ -2,14 +2,14 @@
 
 one:
   name: MyString
-  imgae_url: MyString
+  image_url: MyString
   light: MyString
   water: MyString
   description: MyString
 
 two:
   name: MyString
-  imgae_url: MyString
+  image_url: MyString
   light: MyString
   water: MyString
   description: MyString

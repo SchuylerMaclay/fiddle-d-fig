@@ -12,11 +12,11 @@ gem 'dotenv-rails', :groups => [:development, :test]
 gem 'puma'
 
 gem 'pg'
-
+gem 'pry-rails'
 
 
 # To use ActiveModel has_secure_password
-# gem 'bcrypt', '~> 3.1.7'
+gem 'bcrypt', '~> 3.1.7'
 
 # To use Jbuilder templates for JSON
 # gem 'jbuilder'

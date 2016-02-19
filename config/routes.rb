@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  post "/users/sign_in", to: "sessions#create"
   namespace :api do
     namespace :v1 do
       resources :plants, except: [:new, :edit]
