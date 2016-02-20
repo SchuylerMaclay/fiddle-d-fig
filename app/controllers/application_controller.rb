@@ -1,7 +1,7 @@
 class ApplicationController < ActionController::API
   include ActionController::Serialization
   include ActionController::HttpAuthentication::Token::ControllerMethods
-  before_action :authenticate!, :except => [:index, :show]
+  before_action :authenticate!, :except => [:index, :show, :create, :update, :destroy]
 
   private
   def authenticate!
