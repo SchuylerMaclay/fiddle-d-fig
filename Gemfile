@@ -13,6 +13,7 @@ gem 'puma'
 
 gem 'pg'
 gem 'pry-rails'
+gem 'rack-cors', :require => 'rack/cors'
 
 
 # To use ActiveModel has_secure_password
