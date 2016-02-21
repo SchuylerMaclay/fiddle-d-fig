@@ -1,4 +1,5 @@
-class Api::V1::UserPlantController < ApplicationController
+class Api::V1::UserPlantsController < ApplicationController
+
   def index
     render json: UserPlant.all
   end
