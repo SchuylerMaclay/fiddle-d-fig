@@ -1,4 +1,5 @@
 class UserSerializer < ActiveModel::Serializer
+  embed :ids
   has_many :user_plants, :reviews
-  attributes :name, :email
+  attributes :id, :name, :email
 end
