@@ -43,24 +43,28 @@ review9 = Review.create(content: "hate htis plant")
 review10 = Review.create(content: "want another one")
 review11 = Review.create(content: "hate fake data")
 review12 = Review.create(content: "sob sob sob")
+review13 = Review.create(content: "sob SOB sob SOB sob")
 
 
 bob = User.create(email: "bob@bob", password:"bob")
 sam = User.create(email: "sam@sam", password:"sam")
 dee = User.create(email: "dee@dee", password:"dee")
+sky = User.create(email: "schuylermaclay@gmail.com", password:"beef101")
 
 fig.reviews << [review1, review2, review3]
 ficus.reviews << [review4, review5, review6]
 suc.reviews << [review7, review8, review9]
-cactus.reviews << [review10, review11, review12]
+cactus.reviews << [review10, review11, review12, review13]
 
 bob.reviews << [review1, review2, review3, review4]
 sam.reviews << [review5, review6, review7, review8]
 dee.reviews << [review9, review10, review11, review12]
+sky.reviews << [review13]
 
 dee.plants << [suc, ficus]
-dee.plants << [cactus, fig, ficus]
-dee.plants << [cactus, suc]
+sam.plants << [cactus, fig, ficus]
+bob.plants << [cactus, suc]
+sky.plants << [cactus, suc, ficus, fig]
 
 
 puts "seeded"
