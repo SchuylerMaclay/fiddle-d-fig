@@ -1,5 +1,5 @@
 class PlantSerializer < ActiveModel::Serializer
   embed :ids
   attributes :id, :name, :image_url, :light, :water, :description
-  has_many :reviews
+  has_many :reviews, :user_plants
 end
