@@ -46,10 +46,10 @@ review12 = Review.create(content: "sob sob sob")
 review13 = Review.create(content: "sob SOB sob SOB sob")
 
 
-bob = User.create(email: "bob@bob", password:"bob")
-sam = User.create(email: "sam@sam", password:"sam")
-dee = User.create(email: "dee@dee", password:"dee")
-sky = User.create(email: "schuylermaclay@gmail.com", password:"beef101")
+bob = User.create(name: "Bob", email: "bob@bob", password:"bob")
+sam = User.create(name: "Sam", email: "sam@sam", password:"sam")
+dee = User.create(name: "Dee", email: "dee@dee", password:"dee")
+sky = User.create(name: "Sky", email: "schuylermaclay@gmail.com", password:"beef101")
 
 fig.reviews << [review1, review2, review3]
 ficus.reviews << [review4, review5, review6]
@@ -61,10 +61,22 @@ sam.reviews << [review5, review6, review7, review8]
 dee.reviews << [review9, review10, review11, review12]
 sky.reviews << [review13]
 
-dee.plants << [suc, ficus]
-sam.plants << [cactus, fig, ficus]
-bob.plants << [cactus, suc]
-sky.plants << [cactus, suc, ficus, fig]
+UserPlant.create(name: "bob fig", user: bob, plant: fig, ownership: "garden")
+UserPlant.create(name: "bob ficus", user: bob, plant: ficus, ownership: "wishlist")
+UserPlant.create(name: "dee fig", user: dee, plant: suc, ownership: "garden")
+UserPlant.create(name: "dee fig", user: bob, plant: fig, ownership: "wishlist")
+UserPlant.create(name: "sam cactus", user: sam, plant: cactus, ownership: "garden")
+UserPlant.create(name: "sam suc", user: sam, plant: suc, ownership: "garden")
+UserPlant.create(name: "sam fig", user: sam, plant: fig, ownership: "wishlist")
+UserPlant.create(name: "sky ficus", user: sky, plant: ficus, ownership: "garden")
+UserPlant.create(name: "sky cactus", user: sky, plant: cactus, ownership: "wishlist")
+UserPlant.create(name: "sky suc", user: sky, plant: suc, ownership: "wishlist")
+UserPlant.create(name: "sky fig", user: sky, plant: fig, ownership: "garden")
+
+# dee.plants << [suc, ficus]
+# sam.plants << [cactus, fig, ficus]
+# bob.plants << [cactus, suc]
+# sky.plants << [cactus, suc, ficus, fig]
 
 
 puts "seeded"

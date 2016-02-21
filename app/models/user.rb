@@ -1,8 +1,6 @@
 class User < ActiveRecord::Base
-  # has_many :wishes, :class_name => "Plant"
   has_many :reviews
   has_many :user_plants
-  has_many :plants, through: :user_plants
   has_secure_password
   before_save :verify_authentication_token
 
