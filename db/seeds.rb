@@ -6,35 +6,61 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-Plant.create(
+fig =Plant.create(
   name: "Fiddle Leaf Fig",
   image_url: "http://www.littlefig.com.au/wp-content/uploads/2015/03/fiddle-leaf-fig-journey.jpg",
   light: "bright consistent light",
   water: "When its dry to the touch",
   description: "The best Plant")
-Plant.create(
+ficus = Plant.create(
   name: "ficus",
   image_url: "http://www.gardeningknowhow.com/wp-content/uploads/2012/02/ficus1-400x600.jpg",
   light: "bright consistent light",
   water: "When its dry to the touch",
   description: "A winner")
-Plant.create(
+suc = Plant.create(
   name: "succulent",
   image_url: "https://static1.squarespace.com/static/51945be4e4b05b135b14e8c4/t/51a96d19e4b07ac5e8bc4e0c/1430836460458/how-to-propagate-succulents-from-leaves-and-cuttings-needlesandleaves_net.jpg?format=750w",
   light: "bright consistent light",
   water: "When its dry to the touch",
   description: "cute")
-Plant.create(
+cactus = Plant.create(
   name: "cactus",
   image_url: "https://itsnotnormalisit.files.wordpress.com/2015/05/cactus.jpg",
   light: "bright consistent light",
   water: "never",
   description: "decent plant")
 
+review1 = Review.create(content: "Awesome plant")
+review2 = Review.create(content: "Super Easy")
+review3 = Review.create(content: "Never dies")
+review4 = Review.create(content: "Really pretty")
+review5 = Review.create(content: "Difficult to take care of")
+review6 = Review.create(content: "Smells nice")
+review7 = Review.create(content: "Great, love it, so good")
+review8 = Review.create(content: "gahhhhhh")
+review9 = Review.create(content: "hate htis plant")
+review10 = Review.create(content: "want another one")
+review11 = Review.create(content: "hate fake data")
+review12 = Review.create(content: "sob sob sob")
 
 
-  User.create(email: "bob@bob", password:"bob")
-  User.create(email: "sam@sam", password:"sam")
-  User.create(email: "dee@dee", password:"dee")
+bob = User.create(email: "bob@bob", password:"bob")
+sam = User.create(email: "sam@sam", password:"sam")
+dee = User.create(email: "dee@dee", password:"dee")
 
-  puts "seeded"
+fig.reviews << [review1, review2, review3]
+ficus.reviews << [review4, review5, review6]
+suc.reviews << [review7, review8, review9]
+cactus.reviews << [review10, review11, review12]
+
+bob.reviews << [review1, review2, review3, review4]
+sam.reviews << [review5, review6, review7, review8]
+dee.reviews << [review9, review10, review11, review12]
+
+dee.plants << [suc, ficus]
+dee.plants << [cactus, fig, ficus]
+dee.plants << [cactus, suc]
+
+
+puts "seeded"
