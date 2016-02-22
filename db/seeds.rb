@@ -30,6 +30,60 @@ cactus = Plant.create(
   light: "bright consistent light",
   water: "never",
   description: "decent plant")
+bonsai = Plant.create(
+  name: "Bonsai",
+  image_url: "http://www.bonsaiempire.com/great-bonsai-album/acer-bonsai-pall.jpg",
+  light: "chilling",
+  water: "occasionally",
+  description: "love")
+snake = Plant.create(
+  name: "snake Plant",
+  image_url: "http://realornamentals.com/plant-store/media/catalog/product/cache/6/image/9df78eab33525d08d6e5fb8d27136e95/s/i/silver-queen-snake-plant-small-ornamental-plant-sanseveria-silver-queen-realornamentals.com-web.jpg",
+  light: "bright  light",
+  water: "once a week",
+  description: "A natural winnerA natural winnerA natural winnerA natural winner")
+jade = Plant.create(
+  name: "Jade plant",
+  image_url: "http://images.crateandbarrel.com/is/image/Crate/JadePlantS14/$web_product_hero$&/131119111705/potted-jade-plant.jpg",
+  light: "bright  light",
+  water: "always",
+  description: "decent Schuyler's favorite plant")
+heart = Plant.create(
+  name: "Philodendron, Heartleaf",
+  image_url: "http://images.meredith.com/content/dam/bhg/Images/2015/2/25/101910724.jpg.rendition.largest.jpg",
+  light: "bright consistent light",
+  water: "never",
+  description: "Probably the most popular houseplant in the world, heartleaf philodendron, Philodendron hederaceum, is super tolerant of dark interiors. This fast-growing vine works well in hanging baskets or trained to climb a small trellis or totem. All you have to do is water it when the soil feels dry to the touch. Two newer varieties offer colorful foliage. 'Brasil' has gorgeous gold-and-green variegated foliage. 'Micans' sports purple flushed leaves with a satinlike texture.")
+pothos = Plant.create(
+  name: "Pothos",
+  image_url: "http://images.meredith.com/content/dam/bhg/Images/2015/2/25/101873362.jpg.rendition.largest.jpg",
+  light: "bright consistent light",
+  water: "occasionally",
+  description: "Often confused with Philodendron, pothos, Epipremnum aureum, will thrive in any room of your home as long as you keep it out of full sun. It's an easy-care vining plant that you can train onto a trellis or allow to tumble over the edge of a hanging basket. Pothos comes in a variety of colors and bicolors, including dark green, chartreuse, white-and-green, yellow-and-green, and spotted silver. Water pothos whenever the soil feels dry, and trim back the plant if it starts to get leggy.")
+zz = Plant.create(
+  name: "ZZ Plant",
+  image_url: "http://images.meredith.com/content/dam/bhg/Images/2015/2/25/101873399.jpg.rendition.largest.jpg",
+  light: "bright consistent light",
+  water: "never",
+  description: "Looking for a houseplant that tolerates dark corners and neglect? Check out ZZ plant, Zamioculcas zamiifolia. This African native will do just fine even if it only gets fluorescent light in an office or shop. It also tolerates dry conditions, so it's ideal for someone who travels frequently. ZZ plant looks great, too; it produces upright, slightly arching stems covered in shiny, dark green leaves. Water ZZ plant when the top inch of soil dries out.")
+parlor = Plant.create(
+  name: "Parlor Palm",
+  image_url: "http://images.meredith.com/content/dam/bhg/Images/2009/07/100495929.jpg.rendition.largest.jpg",
+  light: "bright consistent light",
+  water: "never",
+  description: "Popular since the Victorian era, parlor palm, Chamaedorea elegans, is a slow-growing Mexican native that does well in low-light situations. It grows 4 feet tall and makes a bold statement in any room. Parlor palm only needs to be watered when the soil feels dry to the touch, but it does help to mist the plants once in awhile during the winter.")
+fern = Plant.create(
+  name: "Boston Fern",
+  image_url: "http://images.meredith.com/content/dam/bhg/Images/2015/2/25/101694395.jpg.rendition.largest.jpg",
+  light: "bright consistent light",
+  water: "never",
+  description: "Ever since they were first discovered in the late 1800's, Boston ferns, Nephrolepis exaltata, have played an important role in interior design. These gorgeous plants develop bright green, arching fronds that look great in urns or baskets. Boston ferns thrive in partially shady indoor and outdoor locations away from cold drafts or heat ducts. Water whenever the soil feels dry to the touch, and mist often during the winter to minimize leaf drop.")
+dief = Plant.create(
+  name: "Dieffenbachia",
+  image_url: "http://images.meredith.com/content/dam/bhg/Images/2015/2/25/101873399.jpg.rendition.largest.jpg",
+  light: "bright consistent light",
+  water: "never",
+  description: "When it comes to colorful leaves, few houseplants offer as many options as Dieffenbachia. These gorgeous tropical plants feature a wide range of speckled or splotched leaves in either yellow-and-green or white-and-green. Although they grow well in dark rooms, they do prefer some bright, indirect light to keep them from getting too leggy. Dieffenbachia is poisonous, so keep it out of reach of children and pets.")
 
 review1 = Review.create(content: "Awesome plant", rating: 8)
 review2 = Review.create(content: "Super Easy", rating: 7)
