@@ -16,6 +16,9 @@ gem 'pry-rails'
 gem 'rack-cors', :require => 'rack/cors'
 
 
+# CarrierWave for Image Uploads
+gem 'carrierwave'
+
 # To use ActiveModel has_secure_password
 gem 'bcrypt', '~> 3.1.7'
 
