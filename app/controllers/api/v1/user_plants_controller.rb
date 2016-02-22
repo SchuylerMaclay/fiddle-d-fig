@@ -31,6 +31,6 @@ class Api::V1::UserPlantsController < ApplicationController
 
   private
   def user_plant_params
-    params.require(:user_plant).permit(:user_id, :name, :plant_id)
+    params.require(:user_plant).permit(:user_id, :name, :plant_id, :ownership)
   end
 end
