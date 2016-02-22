@@ -62,9 +62,12 @@ dee.reviews << [review9, review10, review11, review12]
 sky.reviews << [review13]
 
 UserPlant.create(name: "bob fig", user: bob, plant: fig, ownership: "garden")
+UserPlant.create(name: "bob cactus", user: bob, plant: cactus, ownership: "garden")
+UserPlant.create(name: "bob suc", user: bob, plant: suc, ownership: "wishlist")
+UserPlant.create(name: "bob ficus", user: bob, plant: ficus, ownership: "wishlist")
 UserPlant.create(name: "bob ficus", user: bob, plant: ficus, ownership: "wishlist")
 UserPlant.create(name: "dee fig", user: dee, plant: suc, ownership: "garden")
-UserPlant.create(name: "dee fig", user: bob, plant: fig, ownership: "wishlist")
+UserPlant.create(name: "dee fig", user: dee, plant: fig, ownership: "wishlist")
 UserPlant.create(name: "sam cactus", user: sam, plant: cactus, ownership: "garden")
 UserPlant.create(name: "sam suc", user: sam, plant: suc, ownership: "garden")
 UserPlant.create(name: "sam fig", user: sam, plant: fig, ownership: "wishlist")
