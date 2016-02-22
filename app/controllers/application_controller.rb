@@ -2,6 +2,7 @@ class ApplicationController < ActionController::API
   include ActionController::Serialization
   include ActionController::HttpAuthentication::Token::ControllerMethods
   before_action :authenticate!, :except => [:index, :show, :create, :update, :destroy]
+  helper_method :current_user, :logged_in?
 
   private
   def authenticate!
@@ -17,4 +18,13 @@ class ApplicationController < ActionController::API
   def render_unauthorized
     render json: { errors: ['Bad credentials'] }, status: 401
   end
+
+  def current_user
+    @current_user ||= authenticate_token
+  end
+
+  def logged_in?
+    !!current_user
+  end
+
 end
