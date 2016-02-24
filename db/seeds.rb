@@ -90,6 +90,18 @@ dief = Plant.create(
   light: "bright consistent light",
   water: "never",
   description: "When it comes to colorful leaves, few houseplants offer as many options as Dieffenbachia. These gorgeous tropical plants feature a wide range of speckled or splotched leaves in either yellow-and-green or white-and-green. Although they grow well in dark rooms, they do prefer some bright, indirect light to keep them from getting too leggy. Dieffenbachia is poisonous, so keep it out of reach of children and pets.")
+glox = Plant.create(
+  name: "Gloxinia",
+  image_url: "http://images.meredith.com/content/dam/bhg/Images/2015/2/25/101876955.jpg.rendition.largest.jpg",
+  light: "low light",
+  water: "often",
+  description: "Although Gloxinia can't survive in a completely dark room, it will bloom beautifully anywhere it can receive bright, indirect light away from full sun. A close relative of African violet, Gloxinia develops large velvety, trumpetlike flowers in a variety of jewel-like colors. Water whenever the soil feels dry to the touch. Use warm water and avoid getting the foliage wet. Feed once a month with a liquid houseplant fertilizer while the plants are in bloom.")
+monstera = Plant.create(
+  name: "Monstera",
+  image_url: "http://images.meredith.com/content/dam/bhg/Images/2015/2/25/101692397.jpg.rendition.largest.jpg",
+  light: "bright consistent light",
+  water: "never",
+  description: "Create a tropical getaway in your living room with Monstera deliciosa. Occasionally called Swiss cheese plant, Monstera produces huge, bright green, attractively cut leaves. Monstera has a dense, bushy shape, but over time, it will begin to stretch and climb a trellis or wood totem. If you want to keep the plant compact, simply prune back the vining branches. Water Monstera whenever the soil feels dry to the touch, and fertilize once a month during the spring and summer.")
 
 review1 = Review.create(content: "Awesome plant", rating: 8)
 review2 = Review.create(content: "Super Easy", rating: 7)
