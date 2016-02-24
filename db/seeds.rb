@@ -12,6 +12,12 @@ fig =Plant.create(
   light: "bright consistent light",
   water: "When its dry to the touch",
   description: "The best Plant")
+johnny =Plant.create(
+  name: "Fuji White Balloon",
+  image_url: "https://dl.dropboxusercontent.com/u/5820649/johnnysplant.jpeg",
+  light: "shine bright like a diamond",
+  water: "on a hot summer day",
+  description: "Balloon flower is a clump-forming perennial which is so named because its flower buds puff up like balloons before bursting open into outward to upward facing, bell-shaped flowers with five pointed lobes. 'Fuji White' features 2 feet diameter, pure white flowers which appear singly or in small clusters atop erect stems typically growing 12-24 inches tall. Oval, dentate leaves to 3 inches long. Blooms throughout the summer. Good fresh cut flower.")
 ficus = Plant.create(
   name: "ficus",
   image_url: "http://www.gardeningknowhow.com/wp-content/uploads/2012/02/ficus1-400x600.jpg",
@@ -98,6 +104,9 @@ review10 = Review.create(content: "want another one", rating: 8)
 review11 = Review.create(content: "hate fake data", rating: 3)
 review12 = Review.create(content: "sob sob sob", rating: 4)
 review13 = Review.create(content: "sob SOB sob SOB sob", rating: 5)
+review14 = Review.create(content: "a real grower", rating: 10)
+review15 = Review.create(content: "great plant", rating: 10)
+review16 = Review.create(content: "The Greatest", rating: 10)
 
 
 bob = User.create(name: "Bob", email: "bob@bob", password:"bob")
@@ -109,10 +118,12 @@ fig.reviews << [review1, review2, review3]
 ficus.reviews << [review4, review5, review6]
 suc.reviews << [review7, review8, review9]
 cactus.reviews << [review10, review11, review12, review13]
+cactus.reviews << [review14, review15, review16]
 
-bob.reviews << [review1, review2, review3, review4]
-sam.reviews << [review5, review6, review7, review8]
-dee.reviews << [review9, review10, review11, review12]
+
+bob.reviews << [review1, review2, review3, review4, review14]
+sam.reviews << [review5, review6, review7, review8, review15]
+dee.reviews << [review9, review10, review11, review12, review16]
 sky.reviews << [review13]
 
 UserPlant.create(name: "bob fig", user: bob, plant: fig, ownership: "garden")
@@ -127,7 +138,10 @@ UserPlant.create(name: "sam fig", user: sam, plant: fig, ownership: "wishlist")
 UserPlant.create(name: "sky ficus", user: sky, plant: ficus, ownership: "garden")
 UserPlant.create(name: "sky cactus", user: sky, plant: cactus, ownership: "wishlist")
 UserPlant.create(name: "sky suc", user: sky, plant: suc, ownership: "wishlist")
-UserPlant.create(name: "sky fig", user: sky, plant: fig, ownership: "garden")
+UserPlant.create(name: "dee Fuji", user: dee, plant: johnny, ownership: "garden")
+UserPlant.create(name: "sam Fuji", user: sam, plant: johnny, ownership: "garden")
+UserPlant.create(name: "bob Fuji", user: bob, plant: johnny, ownership: "garden")
+UserPlant.create(name: "sky Fuji", user: sky, plant: johnny, ownership: "wishlist")
 
 # dee.plants << [suc, ficus]
 # sam.plants << [cactus, fig, ficus]
